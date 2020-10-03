@@ -1,0 +1,164 @@
+.app {
+  background-image: url("../images/bg-pattern-top-desktop.svg"),
+    url("../images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
+.social-proof__layout {
+  padding-top: 60px;
+}
+
+.introduction {
+  min-width: 35vw;
+}
+
+.introduction__title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+  text-align: left;
+  color: var(--very-dark-magenta-color);
+  margin: 1rem 0;
+}
+.introduction__text {
+  margin: 0;
+  color: var(--dark-grayish-magenta-color);
+  line-height: 1.6rem;
+  font-weight: 500;
+  max-width: 480px;
+}
+
+.rating {
+  margin-top: 30px;
+  padding-left: 40px;
+}
+
+.rating__list {
+  list-style: none;
+  padding-left: 0;
+}
+.rating__item {
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+  color: var(--very-dark-magenta-color);
+  font-weight: 700;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #f7f2f8;
+  margin: 1.5rem auto 0;
+  padding: 8px 28px;
+}
+
+.rating__item:first-child {
+  margin: 1.5rem 0 0;
+}
+
+.rating__item:last-child {
+  margin: 1.5rem 0 0 auto;
+}
+
+.rating__item-stars {
+  padding-right: 40px;
+}
+
+.social-proof__cards {
+  margin-top: 80px;
+}
+
+.card {
+  background-color: var(--very-dark-magenta-color);
+  max-width: 380px;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 40px 25px;
+  color: var(--white-color);
+  line-height: 1.6rem;
+}
+.card-1 {
+  transform: translateY(1rem);
+}
+
+.card-2 {
+  transform: translateY(2rem);
+}
+
+.card__info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.card__info-wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 25px;
+}
+
+.card__avatar {
+  border-radius: 50px;
+  width: 50px;
+}
+
+.card__name {
+  font-weight: 700;
+}
+
+.card__position {
+  font-weight: 400;
+  color: var(--soft-pink-color);
+}
+
+.card__comment {
+  margin-top: 30px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  margin-top: auto;
+}
+
+@media (max-width: 375px) {
+  .app {
+    background-image: url("../images/bg-pattern-top-mobile.svg"),
+      url("../images/bg-pattern-bottom-mobile.svg");
+    padding: 0 25px;
+  }
+
+  .introduction__title {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  .introduction__text {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .rating {
+    padding-left: 0;
+  }
+
+  .rating__item {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 16px 28px;
+    min-height: 100px;
+  }
+
+  .rating__item-stars {
+    padding: 0;
+  }
+
+  .social-proof__cards {
+    margin-top: 50px;
+    padding-bottom: 150px;
+  }
+}

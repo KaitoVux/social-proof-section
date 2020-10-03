@@ -1,0 +1,20 @@
+:root {
+  --soft-pink-color: hsl(333, 80%, 67%);
+  --very-dark-magenta-color: hsl(300, 43%, 22%);
+  --white-color: hsl(0, 0%, 100%);
+  --dark-grayish-magenta-color: hsl(303, 10%, 53%);
+  --light-grayish-magenta-color: hsl(300, 24%, 96%);
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+  line-height: 1rem;
+  box-sizing: border-box;
+}
